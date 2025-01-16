@@ -1,25 +1,26 @@
 Solaris-server is a centralized monolithic message bus that delegates tasks between administrators and agents. 
+
 ## Schema
 
 ```json
 {
-  "op": <opcode>,              
+  "ec": <eventcode>,              
   "d": {                       
     # Data is dependent on event
   }
-  "t": "EVENT_NAME" # Event Name
+  "e": "EVENT_NAME" # Event Name
 }
 ```
 
-- op is the opcode that is tied to the event.
-- d is the data, also dependent on the event.
-- t is the event in question.
+- Event code is the code that the event is supposed to interpret.
+- Data is the information available to the event.
+- Event name is the event handler for the server to delegate to.
 
 ### Example 
 
 ```json
 {
-  "op": 0,
+  "ec": 0,
   "d": {
     "file_name": "image.png",
     "chunk_index": 1,
@@ -27,6 +28,6 @@ Solaris-server is a centralized monolithic message bus that delegates tasks betw
     "chunk_data": "<base64_encoded_chunk>",
     "checksum": "abcd1234"
   },
-  "t": "UPLOAD"
+  "e": "UPLOAD"
 }
 ```
