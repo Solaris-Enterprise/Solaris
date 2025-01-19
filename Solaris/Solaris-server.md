@@ -31,3 +31,8 @@ Solaris-server is a centralized monolithic message bus that delegates tasks betw
   "e": "UPLOAD"
 }
 ```
+
+## Version Control
+
+- Server hosts binaries and setup files for both platforms and all versions.
+- 

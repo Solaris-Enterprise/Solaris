@@ -50,3 +50,22 @@ actions:
       interval: 10
       output_file: "C:\\system_logs\\memory_log.txt"
 ```
+
+## Version Control
+
+- (x.x.x), (1.0.5) Semantic Versioning System (SVS).
+- Agent reaches out to control server for versioning checks, and additional control logic.
+- Agent downloads other versions from the server.
+- Agent gets a module based request from the server, to query for updates.
+
+## Permission System
+
+- Simply module blacklisting (SMB).
+
+## Modules
+
+### Module Behavior
+
+- Each module is expected to have implemented the abstract execute function. Which takes in a dictionary of key-value pairs.
+- The expected types of each key-value pair is a string and an object.
+- The agent is expected to return information through the server communication schema (jsón).
