@@ -66,16 +66,8 @@ By default the server will be put in a hold state until the IT professional sets
 
 (Unsure of the behavior of this endpoint at the moment.)
 
-### Admin Management
-
-These groups of endpoints will only be authorized to be used by the super admin.
-
-**This endpoint is exclusive to super admins.**
-
-**These endpoints are using SBA.**
-
 ---
-`/super/reroll_secrets`
+`/auth/reroll_secrets`
 
 ###### Response
 
@@ -84,6 +76,15 @@ These groups of endpoints will only be authorized to be used by the super admin.
   "secret_words": []
 }
 ```
+
+### Admin Management
+
+These groups of endpoints will only be authorized to be used by the super admin.
+
+**This endpoint is exclusive to super admins.**
+
+**These endpoints are using SBA.**
+
 
 #### (I will continue the schema in future. It's basically CRULD operations)
 
