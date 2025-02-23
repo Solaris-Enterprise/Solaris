@@ -4,11 +4,11 @@ Solaris-server is a centralized monolithic message bus that delegates tasks betw
 
 ```json
 {
-  "ec": <eventcode>,              
+  "ec": "EVENT_CODE",              
   "d": {                       
-    # Data is dependent on event
-  }
-  "e": "EVENT_NAME" # Event Name
+    // Data is dependent on event
+  },
+  "e": "EVENT_NAME"  // Event Name
 }
 ```
 
