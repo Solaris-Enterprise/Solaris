@@ -4,17 +4,17 @@ Solaris-server is a centralized monolithic message bus that delegates tasks betw
 
 ```json
 {
-  "ec": "EVENT_CODE",              
+  "e": "EVENT_CODE",
   "d": {                       
     // Data is dependent on event
-  },
-  "e": "EVENT_NAME"  // Event Name
+  },           
+  "m": "MODULE_NAME"  // Event Name
 }
 ```
 
 - Event code is the code that the event is supposed to interpret.
 - Data is the information available to the event.
-- Event name is the event handler for the server to delegate to.
+- Module name is the module handler for the server to delegate to.
 
 ### Example 
 
