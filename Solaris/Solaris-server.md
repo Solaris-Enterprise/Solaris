@@ -8,7 +8,7 @@ Solaris-server is a centralized monolithic message bus that delegates tasks betw
   "d": {                       
     // Data is dependent on event
   },           
-  "m": "MODULE_NAME"  // Event Name
+  "m": "MODULE_NAME"  // Module Name
 }
 ```
 
